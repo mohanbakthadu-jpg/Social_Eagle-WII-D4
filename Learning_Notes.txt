@@ -1,0 +1,39 @@
+This is a very good intermediate-level RAG assignment because it combines:
+
+Multi-document ingestion
+Multiple file formats (PDF, TXT, CSV)
+FAISS Vector DB
+HuggingFace Embeddings
+OpenAI LLM
+Source Attribution
+LangSmith Monitoring
+Streamlit UI
+
+
+Recommended Tech Stack
+Ingestion
+PyPDFLoader
+TextLoader
+CSVLoader
+
+
+Chunking
+RecursiveCharacterTextSplitter(
+    chunk_size=500,
+    chunk_overlap=50
+)
+
+Embedding Model (Open Source)
+sentence-transformers/all-MiniLM-L6-v2
+
+Vector Store
+FAISS (Python Inclined)
+
+Retriever
+search_kwargs={"k":3}
+
+LLM
+OpenAI API from .env
+
+Monitoring
+LangSmith 

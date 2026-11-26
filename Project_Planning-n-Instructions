@@ -1,0 +1,25 @@
+Build a Multi-Source RAG App with PDF, Text, CSV
+
+
+Build a LangChain and Streamlit RAG app that answers questions across several sources [PDF / Text / CSV] at once. The user uploads a folder's worth of documents; you chunk them, embed them and put them all in one vector database. Every answer must come back with its source: which file, which page, so the reader can go and check it.
+
+
+Keep all your code in a single file named rag_app.py, run with streamlit run.
+
+
+Below given FLOW-Sequences to be considered:
+
+
+# RAG:
+-----
+1.) Data Injection / Text Loader 
+2.) Text Splitter [chunk size = 400-500, chunk overlap = 50]
+3.) Embedding [Fetch Open Source Model from hugging face]
+4.) Vector Storage [Open source to be chosen: FAISS / CROMA DB]
+5.) Similarity / Semantic Search [K = 2-3] 
+6.) LLM (OpenAI Key is available in .env)
+
+
+# RAG: Monitoring:
+-----------------
+To be implemented monitoring of token conception through Langsmith (API Key is available in .env)
